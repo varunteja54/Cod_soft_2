@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>Singampalli Varun Teja</h1>
+    <p id="tagline" class="typewriter"></p>
+    <button class="dark-toggle" onclick="toggleDarkMode()">🌙</button>
+  </header>
+
+  <nav id="navbar">
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="about" class="animate">
+    <h2>About Me</h2>
+    <img src="profile.png" alt="varun teja" class="profile-img"/>
+    <p>I'm varun, a web developer passionate about building beautiful, functional websites and apps.</p>
+  </section>
+
+  <section id="skills" class="animate">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li>HTML5</li>
+      <li>CSS3</li>
+      <li>JavaScript</li>
+      <li>Responsive Design</li>
+    </ul>
+  </section>
+
+  <section id="projects" class="animate">
+    <h2>Projects</h2>
+    <div class="project">
+      <img src="project1.png" alt="Project 1" style="max-width:250px; width:100%; height:auto;" />
+
+      <h3>Landing Page</h3>
+      <p>A responsive landing page using HTML, CSS, and JavaScript.</p>
+    </div>
+    <div class="project">
+      <img src="project2.png" alt="Project 2" style="max-width:250px; width:100%; height:auto;" />
+
+      <h3>Portfolio Website</h3>
+      <p>This interactive personal portfolio website.</p>
+    </div>
+     <div class="project">
+      <img src="project3.png" alt="Project 3" style="max-width:250px; width:100%; height:auto;" />
+
+      <h3>Calculator</h3>
+      <p>This interactive basic calculator website.</p>
+    </div>
+    </div>
+  </section>
+
+  <section id="resume" class="animate">
+  <h2>Resume</h2>
+  <div class="resume-buttons">
+    <a href="S Varun Teja_Resume.pdf" download class="resume-btn">⬇️ Download Resume</a>
+    <a href="S_Varun_Teja_Resume.pdf" target="_blank" class="resume-btn view-btn">👁️ View Resume</a>
+  </div>
+</section>
+
+  <section id="contact" class="animate">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required/>
+      <input type="email" id="email" placeholder="Your Email" required/>
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+      <p id="formMsg"></p>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 varun. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
